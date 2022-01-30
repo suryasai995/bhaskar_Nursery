@@ -1,0 +1,57 @@
+
+
+  <mat-drawer-container class="example-container" autosize>
+      <!--  tool bar-->
+    <mat-toolbar class="toolbar">
+        <button mat-icon-button class="menu" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span routerLink="/home">Sri Bhaskar Nursery</span>
+        
+      <div class="example-spacer"></div>
+        <div class="navbarSide">
+        <span    ><a mat-raised-button  routerLink="/home" routerLinkActive="primary" >
+          <mat-icon>home</mat-icon>HOME</a>
+        </span>
+        <span  ><a mat-raised-button routerLink="/about" routerLinkActive="primary" >
+          <mat-icon>
+            perm_identity
+            </mat-icon>ABOUT</a>
+        </span>
+        <span  ><a mat-raised-button routerLink="/contact" routerLinkActive="primary" >
+            <mat-icon>
+                contact_page
+              </mat-icon>CONTACT </a>
+          </span>
+    </div>
+      </mat-toolbar>
+      <!--    side bar-->
+    <mat-drawer #drawer class="example-sidenav"  mode="over">
+      <p>Auto-resizing sidenav</p>
+      <button  class="btn" routerLink="/home" routerLinkActive="primary"  mat-raised-button >
+        <mat-icon>home</mat-icon>HOME
+      </button>
+      <button class="btn" routerLink="/about" routerLinkActive="primary"  mat-raised-button >
+        <mat-icon>
+          perm_identity
+          </mat-icon>ABOUT
+      </button>
+      <button class="btn" routerLink="/contact" routerLinkActive="primary"   mat-raised-button >
+          <mat-icon>
+              contact_page
+            </mat-icon>CONTACT 
+        </button>
+    </mat-drawer>
+    <section id="home">
+      
+  <router-outlet></router-outlet>
+    </section>
+    <section id="about">
+      <app-about></app-about>
+    </section>
+    
+  <section id="contact">
+    <app-contact></app-contact>
+  </section>
+  </mat-drawer-container>
+  

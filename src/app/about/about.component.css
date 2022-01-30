@@ -1,0 +1,47 @@
+.container-flow{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url("../../assets/img3.jpg");
+    background-size: 200px 100px ; 
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.example-card {
+    color: wheat;
+    max-width: 400px;
+    
+    margin: 20px;
+    box-shadow: 5px 5px 3px black;
+    background: linear-gradient(to right, rgba(43, 41, 41, 0.87),rgba(41, 40, 40, 0.993));
+  }
+  .list_card{
+      display: inline-flex;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .list_card{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .example-card {
+        
+    max-width: 250px;
+    }
+    
+    .container-flow{
+        display: block;
+        padding-left: 5%;
+       
+      height: 150vh;
+
+    }
+    
+}
+

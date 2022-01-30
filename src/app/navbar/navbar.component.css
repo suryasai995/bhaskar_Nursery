@@ -1,0 +1,94 @@
+
+.toolbar{
+      background: linear-gradient(
+        to right,
+                #8dfc33,
+                #079602
+      );
+      height: 3em;
+      position: sticky;
+      top: 0%;
+      justify-content: space-between;
+      content: '';
+      z-index: 10;
+      
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+.navbarSide{
+    justify-content: left;
+}
+
+  span {
+      padding-right: 0.5em;
+      
+  }
+  a,.btn{
+      
+    outline: 2px solid rgba(255, 166, 0, 0.747); 
+    background: transparent;
+    color: wheat;
+  }
+  @media only screen and (max-width: 576px) {
+    .navbarSide{
+        display: none;
+    }
+    
+.section{
+  margin-top: 2em;
+  
+  position: relative;
+
+}
+    #about{
+      height: 150vh;
+    }
+}
+
+  /* ---- side nav---*/
+  .example-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+.btn{
+    width: 100%;
+    margin-bottom: 2em;
+    text-shadow: 2px 2px 1px black;
+    font-size: 16px;
+    
+}
+mat-icon{
+    margin-right: .3em;
+    color: black;
+    text-shadow:none;
+}
+  
+  .example-sidenav {
+    width: 50vw;
+    background: linear-gradient(
+        to bottom,
+                #8dfc33ea,
+                #079602
+      );
+      position: absolute;
+      top: 4.2em;
+      border-top-left-radius: 4px;
+      
+      border-top-right-radius: 5px;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .menu{
+        display: none;
+    }
+    
+}
+section{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
